@@ -3426,7 +3426,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C7"
-			(at 0 -1.68 90)
+			(at 3 0 90)
 			(layer "F.SilkS")
 			(uuid "92d1bfed-d69f-4a0e-940c-9a8e9a0d2780")
 			(effects
@@ -5040,7 +5040,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C6"
-			(at 0 1.5 90)
+			(at 3 0 90)
 			(layer "F.SilkS")
 			(uuid "d3ca1370-bfc8-44ac-a21a-93e824e9d500")
 			(effects
@@ -5968,7 +5968,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C5"
-			(at 0 -1.5 90)
+			(at 3 0 90)
 			(layer "F.SilkS")
 			(uuid "af133def-7d4c-4780-97fe-e76791b4de49")
 			(effects
@@ -7106,8 +7106,55 @@
 		(layer "Edge.Cuts")
 		(uuid "a5228b55-6d4e-4eb6-b87e-a9d7b12da16b")
 	)
+	(gr_text "GND  SENS  +5V"
+		(at 163 71.5 90)
+		(layer "F.SilkS")
+		(uuid "e30b48e3-7eed-42a7-afe2-78e99887723a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify top)
+		)
+	)
+	(gr_text "L ~{OUT} N"
+		(at 87 59.5 270)
+		(layer "F.SilkS")
+		(uuid "bed97a2a-f3bf-4e52-858b-6836f5678f25")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify top)
+		)
+	)
+	(gr_text "L ~{IN} N"
+		(at 87 73.5 270)
+		(layer "F.SilkS")
+		(uuid "7ebbe9ac-eb5e-4989-99c2-09e2376b06cf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify top)
+		)
+	)
+	(gr_text "230V~\n2A max."
+		(at 87.5 49 270)
+		(layer "F.SilkS")
+		(uuid "3a77d16b-3c86-44d1-bf62-b46fbddf35d8")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+		)
+	)
 	(gr_text "BLERIOT RELAY v1.0"
-		(at 88 47 0)
+		(at 101.5 47 0)
 		(layer "F.SilkS")
 		(uuid "62a12de5-6de7-4c6e-a61a-bc39a67a1bbf")
 		(effects
