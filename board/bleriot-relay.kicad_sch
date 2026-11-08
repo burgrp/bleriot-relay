@@ -4259,6 +4259,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "do verze 1.1:\n- pull-up 4k7 na sens"
+		(exclude_from_sim no)
+		(at 173.99 85.852 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "48f70c92-4aed-482e-baa6-994abffb9f61")
+	)
 	(junction
 		(at 97.79 57.15)
 		(diameter 0)
