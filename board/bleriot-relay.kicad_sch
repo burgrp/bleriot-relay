@@ -4259,17 +4259,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "do verze 1.1:\n- pull-up 4k7 na sens"
-		(exclude_from_sim no)
-		(at 173.99 85.852 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "48f70c92-4aed-482e-baa6-994abffb9f61")
-	)
 	(junction
 		(at 97.79 57.15)
 		(diameter 0)
@@ -4329,6 +4318,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a42d5da1-8784-45d0-b184-f8226b7029cb")
+	)
+	(junction
+		(at 234.95 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfc37ae2-7d48-4e76-bd1a-874fc43f8067")
 	)
 	(junction
 		(at 222.25 57.15)
@@ -4602,6 +4597,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 86.36) (xy 237.49 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d250cf3-e6d6-4ccd-b382-0be199a67498")
+	)
+	(wire
+		(pts
 			(xy 62.23 165.1) (xy 60.96 166.37)
 		)
 		(stroke
@@ -4692,7 +4697,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 86.36) (xy 237.49 86.36)
+			(xy 222.25 86.36) (xy 234.95 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4989,6 +4994,16 @@
 			(type default)
 		)
 		(uuid "eec7285f-21f1-4a5c-b670-92792aff33b2")
+	)
+	(wire
+		(pts
+			(xy 234.95 80.01) (xy 234.95 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f703f3ad-8d7f-4a89-9e59-5b316014dfd1")
 	)
 	(wire
 		(pts
@@ -6259,6 +6274,163 @@
 			(project "bleriot-relay"
 				(path "/6b7dd4b9-634f-41b4-b846-9b2e2d6d43c6"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 234.95 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2542d0fc-9d6e-49dd-b517-fadfbbe44ca2")
+		(property "Reference" "#PWR026"
+			(at 234.95 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 234.95 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 234.95 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2677fccc-38f8-429a-b516-8cbc48f893e2")
+		)
+		(instances
+			(project "bleriot-relay"
+				(path "/6b7dd4b9-634f-41b4-b846-9b2e2d6d43c6"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 234.95 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "268f54d4-ee4f-4053-b6a6-1fd3d27fc311")
+		(property "Reference" "R7"
+			(at 237.49 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4k7"
+			(at 237.49 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 234.95 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "DS18B20 data pull-up to 3.3 V"
+			(at 234.95 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "17f68f9c-ea50-4376-a1d3-d7e06667c812")
+		)
+		(pin "2"
+			(uuid "52a614f4-af22-4fb5-9914-d5e38d7f0ab8")
+		)
+		(instances
+			(project "bleriot-relay"
+				(path "/6b7dd4b9-634f-41b4-b846-9b2e2d6d43c6"
+					(reference "R7")
 					(unit 1)
 				)
 			)
